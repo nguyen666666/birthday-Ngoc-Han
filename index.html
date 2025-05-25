@@ -1,0 +1,85 @@
+<details>
+<summary>👉 Nhấn để xem nội dung <code>index.html</code></summary>
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chúc mừng sinh nhật Ngọc Hân 🎂</title>
+  <style>
+    body {
+      background: #000;
+      color: #fff;
+      font-family: 'Comic Sans MS', cursive;
+      text-align: center;
+      overflow: hidden;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-top: 50px;
+      color: #ffd700;
+      text-shadow: 0 0 10px #fff;
+    }
+
+    .cake {
+      position: relative;
+      margin: 100px auto 20px auto;
+      width: 200px;
+      height: 200px;
+    }
+
+    .candle {
+      position: absolute;
+      width: 10px;
+      height: 60px;
+      background: #fff;
+      left: 50%;
+      top: -60px;
+      transform: translateX(-50%);
+    }
+
+    .flame {
+      width: 15px;
+      height: 15px;
+      background: orange;
+      border-radius: 50%;
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: flicker 0.1s infinite alternate;
+      box-shadow: 0 0 20px orange;
+    }
+
+    @keyframes flicker {
+      from { transform: translateX(-50%) scale(1); }
+      to { transform: translateX(-50%) scale(1.2); }
+    }
+
+    .message {
+      font-size: 1.5em;
+      margin: 10px auto;
+      width: 80%;
+      max-width: 500px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Chúc mừng sinh nhật Đỗ Hoàng Ngọc Hân 🎂</h1>
+  <div class="cake">
+    <div class="candle">
+      <div class="flame"></div>
+    </div>
+    <img src="https://i.imgur.com/jD1lX5K.png" width="200px" alt="cake">
+  </div>
+  <p class="message">
+    Chúc Ngọc Hân một ngày sinh nhật thật ngọt ngào, ấm áp và tràn đầy tiếng cười.  
+    Mong rằng tuổi mới sẽ mang đến cho bạn thật nhiều niềm vui, sức khỏe và những điều tuyệt vời nhất 💖  
+    <br><br>
+    — Từ một người luôn nhớ đến bạn 🎁
+  </p>
+</body>
+</html>
