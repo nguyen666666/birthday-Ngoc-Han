@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Chúc mừng sinh nhật Ngọc Hân 🎂</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="door-scene">
-    <img src="images/cat.gif" id="cat" alt="Con mèo cute đang gõ cửa">
-    <br>
-    <button onclick="openDoor()">Giúp mở cửa 🚪</button>
+  <div id="scene1" class="scene">
+    <img src="images/cat.gif" alt="Cute Cat" class="cat">
+    <button id="openBtn">Mở cửa</button>
   </div>
 
-  <div id="birthday-room" style="display:none;">
-    <img src="images/cake.png" id="cake" alt="Bánh kem sinh nhật">
-    <br>
-    <button onclick="showMessages()">Mở cửa sinh nhật 🎈</button>
-    <div id="messages"></div>
-  </div>
-
-  <div id="wish" style="display:none;">
-    <p id="wishText"></p>
+  <div id="scene2" class="scene hidden">
+    <div class="balloons"></div>
+    <h1>🎉 Sinh nhật vui vẻ 🎉</h1>
+    <img src="images/cake.png.jpg" alt="Cake" class="cake" id="cakeImg">
+    <div id="messages" class="hidden">
+      <p>Từ Minh: Chúc bạn tuổi mới luôn vui vẻ và hạnh phúc!</p>
+      <p>Từ Linh: Chúc bạn ngày càng xinh đẹp và thành công!</p>
+      <p>Từ Nguyên: Anh chúc em một sinh nhật ấm áp, tràn ngập yêu thương. ❤️</p>
+    </div>
+    <div id="wish" class="hidden">Ước...</div>
+    <div id="end" class="hidden">Thôi... <br><strong>I Love You ❤️</strong></div>
   </div>
 
   <script src="script.js"></script>
