@@ -1,35 +1,29 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Chúc mừng sinh nhật</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Hộp thời gian yêu thương 🎁</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="scene1">
-    <img src="images/cat.gif" alt="Mèo gõ cửa" />
-    <br />
-    <button id="openBtn">Mở cửa</button>
-  </div>
+  <audio autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
 
-  <div id="scene2" class="hidden">
-    <h1>🎉 Sinh nhật vui vẻ 🎉</h1>
-    <img src="images/cake.png.jpg" id="cakeImg" alt="Bánh sinh nhật" />
-    
-    <div id="messages" class="hidden">
-      <p><strong>Từ Minh:</strong> Chúc bạn tuổi mới luôn vui vẻ và hạnh phúc!</p>
-      <p><strong>Từ Linh:</strong> Chúc bạn ngày càng xinh đẹp và thành công!</p>
-      <p><strong>Từ Nguyễn:</strong> Anh chúc em một sinh nhật ấm áp, tràn ngập yêu thương ❤️</p>
+  <div class="container">
+    <h1>🎉 Gửi đến Đỗ Hoàng Ngọc Hân 🎉</h1>
+    <p class="intro">Mỗi lá thư là một khoảnh khắc tớ luôn muốn giữ mãi trong tim...</p>
+
+    <div class="letters">
+      <div class="letter" onclick="openLetter(1)">💌 Lá thư 1</div>
+      <div class="letter" onclick="openLetter(2)">💌 Lá thư 2</div>
+      <div class="letter" onclick="openLetter(3)">💌 Lá thư 3</div>
+      <div class="letter" onclick="openLetter(4)">💌 Lá thư cuối cùng</div>
     </div>
 
-    <div id="wish" class="hidden">
-      <p>Ước đi nào…</p>
-    </div>
-
-    <div id="end" class="hidden">
-      <p>Thôi…</p>
-      <h2>I Love You ❤️</h2>
+    <div id="messageBox" class="hidden">
+      <div id="messageText"></div>
+      <button onclick="closeMessage()">Đóng</button>
     </div>
   </div>
 
