@@ -10,7 +10,6 @@ openBtn.addEventListener("click", () => {
   scene1.classList.add("hidden");
   scene2.classList.remove("hidden");
 
-  // Hiện lời chúc sau 2 giây
   setTimeout(() => {
     messages.classList.remove("hidden");
   }, 2000);
