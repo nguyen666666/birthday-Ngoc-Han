@@ -10,7 +10,7 @@ openBtn.addEventListener("click", () => {
   scene1.classList.add("hidden");
   scene2.classList.remove("hidden");
 
-  // Show messages sau 2 giây
+  // Hiện lời chúc sau 2 giây
   setTimeout(() => {
     messages.classList.remove("hidden");
   }, 2000);
@@ -22,5 +22,5 @@ cakeImg.addEventListener("click", () => {
   setTimeout(() => {
     wish.classList.add("hidden");
     end.classList.remove("hidden");
-  }, 6000); // Hiện chữ "Ước..." trong 6s
+  }, 6000);
 });
