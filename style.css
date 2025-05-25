@@ -1,42 +1,63 @@
 body {
+  margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #fddde6, #ffe8f0);
+  background: linear-gradient(to bottom right, #ffe0ec, #ffd1e1);
+  color: #fff;
   text-align: center;
-  color: #333;
-  padding: 20px;
+  overflow-x: hidden;
 }
 
 .hidden {
   display: none;
 }
 
-.cat-img, .cake-img {
-  width: 200px;
-  border-radius: 10px;
-  margin: 20px 0;
+img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
 }
 
 button {
   padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 6px;
+  font-size: 18px;
+  background-color: #fff;
+  color: #333;
   border: none;
-  background-color: #ff8fa3;
-  color: white;
+  border-radius: 10px;
   cursor: pointer;
-}
-
-button:hover {
-  background-color: #ff5c7a;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
-  color: #c94e50;
+  font-size: 28px;
+  margin: 20px 0;
+  color: #c0392b;
 }
 
-#wish, #end {
-  font-size: 22px;
-  font-style: italic;
-  color: #b3005f;
+p {
+  font-size: 18px;
+  color: #333;
+  margin: 10px;
+  line-height: 1.6;
+}
+
+#scene1 img {
+  width: 150px;
+}
+
+#scene2 img {
+  max-width: 300px;
+}
+
+#messages, #wish, #end {
   margin-top: 20px;
+  padding: 0 20px;
+}
+
+#end {
+  font-size: 24px;
+  color: #e74c3c;
+  font-weight: bold;
 }
