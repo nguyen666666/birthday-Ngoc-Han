@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Chúc mừng sinh nhật Ngọc Hân</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Chúc mừng sinh nhật</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Cảnh 1: Mèo gõ cửa -->
-  <div id="scene1" class="scene">
-    <img src="images/cat.gif" alt="Mèo gõ cửa" class="cat-img"/>
+  <div id="scene1">
+    <img src="images/cat.gif" alt="Mèo gõ cửa" class="cat-img">
     <button id="openBtn">Mở cửa</button>
   </div>
 
-  <!-- Cảnh 2: Bánh sinh nhật và lời chúc -->
-  <div id="scene2" class="scene hidden">
+  <div id="scene2" class="hidden">
     <h1>🎉 Sinh nhật vui vẻ 🎉</h1>
-    <img id="cakeImg" src="images/cake.png.jpg" alt="Bánh sinh nhật" class="cake-img"/>
+    <img id="cakeImg" src="images/cake.png.jpg" alt="Bánh sinh nhật" class="cake-img">
 
     <div id="messages" class="hidden">
-      <p><i>Từ Minh:</i> Chúc bạn tuổi mới luôn vui vẻ và hạnh phúc!</p>
-      <p><i>Từ Linh:</i> Chúc bạn ngày càng xinh đẹp và thành công!</p>
-      <p><i>Từ Nguyên:</i> Anh chúc em một sinh nhật ấm áp, tràn ngập yêu thương ❤️</p>
+      <p><em>Từ Minh:</em> Chúc bạn tuổi mới luôn vui vẻ và hạnh phúc!</p>
+      <p><em>Từ Linh:</em> Chúc bạn ngày càng xinh đẹp và thành công!</p>
+      <p><em>Từ Nguyên:</em> Anh chúc em một sinh nhật ấm áp, tràn ngập yêu thương ❤️</p>
     </div>
 
-    <div id="wish" class="wish hidden">Ước đi...</div>
-    <div id="end" class="end hidden">Thôi...<br><strong>I Love You ❤️</strong></div>
+    <div id="wish" class="hidden">
+      <p>Ước đi...</p>
+    </div>
+
+    <div id="end" class="hidden">
+      <p>Thôi...</p>
+      <p><strong>I Love You ❤️</strong></p>
+    </div>
   </div>
 
   <script src="script.js"></script>
