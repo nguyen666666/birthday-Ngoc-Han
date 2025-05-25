@@ -1,58 +1,42 @@
 body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-  background: linear-gradient(to right, #fceabb, #f8b500);
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #fddde6, #ffe8f0);
   text-align: center;
   color: #333;
-}
-
-.scene {
-  padding: 30px;
-}
-
-.cat {
-  width: 200px;
-  margin-top: 20px;
-}
-
-button {
-  padding: 10px 20px;
-  font-size: 18px;
-  background: #ff69b4;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-.cake {
-  width: 250px;
-  margin-top: 20px;
-  cursor: pointer;
-  animation: float 2s infinite ease-in-out;
-}
-
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
-}
-
-.balloons::before {
-  content: "🎈🎈🎈🎈🎈";
-  font-size: 40px;
-  display: block;
-  margin-bottom: 10px;
-  animation: float 3s infinite ease-in-out;
+  padding: 20px;
 }
 
 .hidden {
   display: none;
 }
 
+.cat-img, .cake-img {
+  width: 200px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: #ff8fa3;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff5c7a;
+}
+
+h1 {
+  color: #c94e50;
+}
+
 #wish, #end {
-  font-size: 28px;
+  font-size: 22px;
+  font-style: italic;
+  color: #b3005f;
   margin-top: 20px;
-  font-weight: bold;
 }
