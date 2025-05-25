@@ -1,59 +1,73 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom right, #ffdee9, #b5fffc);
-  color: #333;
+  font-family: 'Georgia', serif;
+  background: linear-gradient(to right, #ffe0e9, #fce1f1);
+  color: #5c3d5e;
   text-align: center;
-  padding: 20px;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 50px 20px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.intro {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.letters {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.letter {
+  padding: 15px 25px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.letter:hover {
+  transform: scale(1.05);
+}
+
+#messageBox {
+  margin-top: 40px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hidden {
   display: none;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 15px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 button {
-  padding: 12px 25px;
-  font-size: 18px;
-  background-color: #ff6b81;
-  color: white;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #f88;
   border: none;
+  color: #fff;
   border-radius: 10px;
   cursor: pointer;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
-  background-color: #ff4757;
-}
-
-h1 {
-  font-size: 28px;
-  color: #d63031;
-}
-
-#messages p, #wish p, #end p {
-  font-size: 18px;
-  margin: 10px;
-  color: #2d3436;
-}
-
-#scene1 img {
-  width: 180px;
-}
-
-#scene2 img#cakeImg {
-  width: 90%;
-  max-width: 350px;
+  background: #f55;
 }
