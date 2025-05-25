@@ -1,10 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom right, #ffe0ec, #ffd1e1);
-  color: #fff;
+  background: linear-gradient(to bottom right, #ffdee9, #b5fffc);
+  color: #333;
   text-align: center;
-  overflow-x: hidden;
+  padding: 20px;
 }
 
 .hidden {
@@ -12,52 +16,44 @@ body {
 }
 
 img {
-  max-width: 90%;
+  max-width: 100%;
   height: auto;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 button {
-  padding: 10px 20px;
+  padding: 12px 25px;
   font-size: 18px;
-  background-color: #fff;
-  color: #333;
+  background-color: #ff6b81;
+  color: white;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #ff4757;
 }
 
 h1 {
   font-size: 28px;
-  margin: 20px 0;
-  color: #c0392b;
+  color: #d63031;
 }
 
-p {
+#messages p, #wish p, #end p {
   font-size: 18px;
-  color: #333;
   margin: 10px;
-  line-height: 1.6;
+  color: #2d3436;
 }
 
 #scene1 img {
-  width: 150px;
+  width: 180px;
 }
 
-#scene2 img {
-  max-width: 300px;
-}
-
-#messages, #wish, #end {
-  margin-top: 20px;
-  padding: 0 20px;
-}
-
-#end {
-  font-size: 24px;
-  color: #e74c3c;
-  font-weight: bold;
+#scene2 img#cakeImg {
+  width: 90%;
+  max-width: 350px;
 }
