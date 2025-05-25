@@ -1,32 +1,58 @@
 body {
   margin: 0;
-  padding: 0;
-  font-family: 'Comic Sans MS', cursive;
-  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
-  color: #fff;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #fceabb, #f8b500);
   text-align: center;
+  color: #333;
 }
 
-@keyframes gradientBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+.scene {
+  padding: 30px;
+}
+
+.cat {
+  width: 200px;
+  margin-top: 20px;
 }
 
 button {
-  margin-top: 20px;
   padding: 10px 20px;
-  font-size: 16px;
-  background-color: #fff;
-  color: #000;
+  font-size: 18px;
+  background: #ff69b4;
+  color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
+  margin-top: 20px;
 }
 
-img {
-  max-width: 250px;
-  border-radius: 10px;
+.cake {
+  width: 250px;
+  margin-top: 20px;
+  cursor: pointer;
+  animation: float 2s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.balloons::before {
+  content: "🎈🎈🎈🎈🎈";
+  font-size: 40px;
+  display: block;
+  margin-bottom: 10px;
+  animation: float 3s infinite ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
+
+#wish, #end {
+  font-size: 28px;
+  margin-top: 20px;
+  font-weight: bold;
 }
