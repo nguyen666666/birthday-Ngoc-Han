@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Chúc mừng sinh nhật Ngọc Hân 🎂</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="scene" id="intro">
-    <img src="https://i.imgur.com/7yUVEBo.gif" class="cat" alt="Cute cat gõ cửa"/>
-    <button id="openBtn">Giúp mở cửa</button>
+  <div id="door-scene">
+    <img src="images/cat.gif" id="cat" alt="Con mèo cute đang gõ cửa">
+    <br>
+    <button onclick="openDoor()">Giúp mở cửa 🚪</button>
   </div>
 
-  <div class="scene hidden" id="partyRoom">
-    <div class="decorations">
-      <h1>🎉 Surprise 🎉</h1>
-      <p class="msg">Chờ chút nha...</p>
-    </div>
-    <div class="cake" id="cake">🎂</div>
+  <div id="birthday-room" style="display:none;">
+    <img src="images/cake.png" id="cake" alt="Bánh kem sinh nhật">
+    <br>
+    <button onclick="showMessages()">Mở cửa sinh nhật 🎈</button>
+    <div id="messages"></div>
   </div>
 
-  <div class="scene hidden" id="final">
-    <h1 class="love">I Love You 💖</h1>
+  <div id="wish" style="display:none;">
+    <p id="wishText"></p>
   </div>
 
   <script src="script.js"></script>
